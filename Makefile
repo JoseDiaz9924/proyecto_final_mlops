@@ -4,6 +4,6 @@ install:
 train:
 	python src/train.py
 
-test:
+validate:
 	python src/validate.py
 
