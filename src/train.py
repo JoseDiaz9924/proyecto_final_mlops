@@ -27,7 +27,7 @@ from preprocess import load_data, preprocess, split_data
 
 
 # Definicion de rutas
-workspace_dir  = Path.cwd().resolve().parent
+workspace_dir  = os.getcwd()
 mlruns_dir     = os.path.join(workspace_dir, "mlruns")
 tracking_uri   = "file:///" + os.path.abspath(mlruns_dir).replace("\\", "/")
 artifact_loc   = tracking_uri          # experimentos y modelos en el mismo directorio
