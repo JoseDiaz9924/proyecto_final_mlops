@@ -12,14 +12,14 @@ import import_ipynb
 from preprocess import load_data, preprocess, split_data
 from sklearn.metrics import r2_score
 from sklearn.model_selection import train_test_split
-
+import sys
 
 # In[67]:
 
 
 # rutas
 THRESHOLD = 0.6
-workspace_dir  = Path.cwd().resolve().parent
+workspace_dir  = os.getcwd()
 data_path_dir = os.path.join(workspace_dir,"data")
 config_path = os.path.join(workspace_dir, "config.yaml")
 model_pkl_path = os.path.join(workspace_dir, "model.pkl")
