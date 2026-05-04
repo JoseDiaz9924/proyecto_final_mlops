@@ -66,6 +66,8 @@ X_train, X_test, y_train, y_test = split_data(
     config["model"]["random_state"]
 )
 
+y_pred = model.predict(X_test)
+
 r2 = r2_score(y_test, y_pred)
 print(f"[validate] X_test shape: {X_test.shape}")
 
